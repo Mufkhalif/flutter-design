@@ -1,16 +1,33 @@
-# my_app
+# Flutter Design App
 
-A new Flutter project.
+## Description
 
-## Getting Started
+Simple project Flutter Design
 
-This project is a starting point for a Flutter application.
+## 1. Chatty App
 
-A few resources to get you started if this is your first Flutter project:
+![image info](./assets/images/home_chatty.png)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+`change main.dart to this`
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```dart
+import 'package:flutter/material.dart';
+import 'package:my_app/home_chatty.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(fontFamily: 'Poppins'),
+      home: HomeChatty(),
+    );
+  }
+}
+
+```
