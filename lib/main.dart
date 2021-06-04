@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/home_chatty.dart';
+// import 'package:my_app/basic_page.dart';
+import 'package:my_app/pages/home_movie.dart';
+// import 'package:my_app/home_chatty.dart';
+// import 'package:my_app/home_horizontalpages.dart';
 // import 'package:my_app/profile_page.dart'; //pages_chatty
 // import 'package:my_app/home_pages.dart';
 
@@ -14,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: 'Poppins'),
-      home: HomeChatty(),
+      home: HomeMoviePages(),
     );
   }
 }
